@@ -253,7 +253,8 @@ def main():
         print("Nothing successfully scraped; aborting without sending or updating state.")
         return
 
-    output_path = Path("digest.epub")
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    output_path = Path(f"Futurism Digest ({today_str}).epub")
     build_epub(articles, output_path)
     print(f"Built {output_path} ({output_path.stat().st_size} bytes)")
 
