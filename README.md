@@ -10,15 +10,15 @@ Daily GitHub Action that pulls the newest Futurism articles, bundles up to
 2. **Get a Resend API key**
    - Sign up at https://resend.com (free tier: 3,000 emails/month).
    - Create an API key.
-   - If you don't have a custom domain to verify, you can send from
+   - ~~If you don't have a custom domain to verify, you can send from
      Resend's shared test address `onboarding@resend.dev` — good enough
-     for personal automation like this.
+     for personal automation like this.~~
 
 3. **Add repo secrets** (Settings → Secrets and variables → Actions):
    - `REK` — your Resend API key.
    - `KINDLE_EMAIL` — your `@kindle.com` send-to-Kindle address.
    - `FROM_EMAIL` — the address you're sending from (e.g.
-     `onboarding@resend.dev`, or `you@yourdomain.com` if you verified a
+     ~~`onboarding@resend.dev`, or~~ `you@yourdomain.com` if you verified a
      domain in Resend).
 
 4. **Approve the sender on Amazon**
